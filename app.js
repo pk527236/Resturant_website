@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Store hash
         var hash = this.hash;
 
-        // Using window.scrollTo with smooth behavior to add smooth page scroll
+        // Using scrollIntoView for smoother behavior
         var targetElement = document.querySelector(hash);
         if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop,
+          targetElement.scrollIntoView({
             behavior: "smooth"
           });
 
@@ -25,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 
 
 
